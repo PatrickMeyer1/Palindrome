@@ -1,4 +1,4 @@
 # Palindrome
-Simple palindrome method
+Simple palindrome methods (one for python and one for java)
 
-Feel free to use if you wish
+Feel free to use
