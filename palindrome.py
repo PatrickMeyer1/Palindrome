@@ -1,6 +1,8 @@
 # Method verifying if a given word is a palindrome or not.
-# A palindrome is a word that can be read the same backward or forwards
-def padlindrome(word):
+# Definition: A palindrome is a word that can be read the same backward or forwards
+def palindrome(word):
+    word = word.lower()
+    word = word.replace(" ","")
     length = len(word)
     half_length = length//2
     for i in range(1, half_length + 1):
@@ -10,7 +12,7 @@ def padlindrome(word):
                 print("The word is a palindrome")
         else:
             print( word[i-1] + " is NOT equal to " + word[-i] )
-            print("Thus, the word is not a palindrome")
+            print("Thus, the word is NOT a palindrome")
             break
 
 
