@@ -5,10 +5,10 @@ def palindrome(word):
     word = word.replace(" ","")
     length = len(word)
     half_length = length//2
-    for i in range(1, half_length + 1):
+    for i in range(1, half_length + 2):
         if word[i-1] == word[-i]:
             print( word[i-1] + " is equal to " + word[-i] )
-            if i == half_length:
+            if i == half_length + 1:
                 print("The word is a palindrome")
         else:
             print( word[i-1] + " is NOT equal to " + word[-i] )
